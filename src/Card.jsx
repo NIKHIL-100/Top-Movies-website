@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { useReducer } from "react";
+// import { useReducer } from "react";
 import "./Card.css";
 
 const Card = (props) => {
@@ -8,9 +8,9 @@ const Card = (props) => {
 
     // useState for Like's & View's 
     const [view , setView] = useState(null);
-    const [like , setLike] = useState(null);
+    // const [like , setLike] = useState(null);
     const handelView = () => {setView(view + 1)};
-    const handelLike = () => {setLike(like + 1)};
+    // const handelLike = () => {setLike(like + 1)};
 
     
 
@@ -26,7 +26,7 @@ const Card = (props) => {
       throw new Error("what's going on?" )
   }
 }
-const [state, dispatch] = useReducer(reducer, initialState);
+// const [state, dispatch] = useReducer(reducer, initialState);
 
     
   return (
@@ -57,7 +57,7 @@ const [state, dispatch] = useReducer(reducer, initialState);
             </div>
           */}
           
-              <button style={{marginBottom:'15px', padding:"4px", marginInline:"90px"}} className="btn-watch" onClick={handelView}>  <a style={{color:"white", textDecoration:"none"}} href={props.link} target="_blank">Watch Now </a></button>
+              <button style={{marginBottom:'15px', padding:"4px", marginInline:"90px"}} className="btn-watch" onClick={handelView}>  <a style={{color:"white", textDecoration:"none"}} href={props.link} target="_blank" rel="noreferrer">Watch Now </a></button>
            
 
             {/* usereducer rating bar */}
