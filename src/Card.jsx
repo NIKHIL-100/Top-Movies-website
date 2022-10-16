@@ -15,17 +15,17 @@ const Card = (props) => {
     
 
       // useReducer for rating bar
-    const initialState = { width: 25 };
-    const reducer = (state, action) => {
-    switch (action) {
-    case 'plus':
-      return { width: state.width + 50 }
-    case 'minus':
-      return { width: Math.max(state.width - 50, 2) }
-    default:
-      throw new Error("what's going on?" )
-  }
-}
+//     const initialState = { width: 25 };
+//     const reducer = (state, action) => {
+//     switch (action) {
+//     case 'plus':
+//       return { width: state.width + 50 }
+//     case 'minus':
+//       return { width: Math.max(state.width - 50, 2) }
+//     default:
+//       throw new Error("what's going on?" )
+//   }
+// }
 // const [state, dispatch] = useReducer(reducer, initialState);
 
     
