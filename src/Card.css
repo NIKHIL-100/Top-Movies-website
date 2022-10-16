@@ -1,0 +1,79 @@
+/* CSS code for Cards */
+.heading1{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container{
+    justify-content: center;
+    /* width: 70%; */
+    /* margin: 0px auto; */
+  
+  }
+  .row{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .col__3{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top:50px;
+   } 
+
+   .card {
+    background-color: black;
+   
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    transition: .4s ease;
+  }
+  .card .card__info{
+    padding-left: 20px;
+    overflow: hidden;
+  }
+  .card.cards{
+    border-radius: 10px;
+  }
+  .card__img {
+    /* padding: 20px; */
+    margin-left: 22px;
+    margin-bottom: 10px;
+   width:250px; 
+   height: 300px;
+  }
+  .card .card__info{
+    color: aliceblue;
+    /* padding: 20px; */
+    margin-top: 0px;
+  }
+  /* .card__info .btn{
+    background-color: red;
+    border-radius: 5px;
+  } */
+  .card__info .btn-watch{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    }
+  .card__info .like-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* :hover.card .card__info .like-view{
+    margin-top: -200px;
+  } */
+  .card__info .like-view .p{
+    padding: 1px;
+    border-radius: 5px;
+  }
+  
+  
